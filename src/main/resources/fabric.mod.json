@@ -8,9 +8,9 @@
 		"HeShanJR|核善的俊瑞"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod",
-		"issues": "https://github.com/FabricMC/fabric-example-mod/issues"
+		"homepage": "https://github.com/HeShanJR/Ore_Crops/wiki",
+		"sources": "https://github.com/HeShanJR/Ore_Crops",
+		"issues": "https://github.com/HeShanJR/Ore_Crops/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/ore_crops/icon.png",
