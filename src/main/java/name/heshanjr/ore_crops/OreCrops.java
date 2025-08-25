@@ -1,5 +1,7 @@
 package name.heshanjr.ore_crops;
 
+import name.heshanjr.ore_crops.item.ModItemGroups;
+import name.heshanjr.ore_crops.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +21,8 @@ public class OreCrops implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItems.registerItems();
+		ModItemGroups.registerGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
