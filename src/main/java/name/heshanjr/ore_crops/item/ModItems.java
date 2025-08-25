@@ -5,7 +5,9 @@ import name.heshanjr.ore_crops.OreCrops;
 //为添加natural而导入的库
 //import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 //为添加natural而导入的库
-import net.minecraft.block.Blocks;
+import name.heshanjr.ore_crops.block.ModBlocks;
+//import net.minecraft.block.Blocks;
+//为添加原版作物而导入的库
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,7 +20,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final  Item IRON_SEEDS = registerItem("iron_seeds", new AliasedBlockItem(Blocks.WHEAT, new Item.Settings()));
+    public static final  Item IRON_SEEDS = registerItem("iron_seeds", new AliasedBlockItem(ModBlocks.IRON_CROP, new Item.Settings()));
     //由于还没写相关作物，这里先用原版的小麦
     public static Item registerItems(String id,Item item){
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(),new Identifier(OreCrops.MOD_ID,id)), item);

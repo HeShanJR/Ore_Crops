@@ -1,5 +1,6 @@
 package name.heshanjr.ore_crops;
 
+import name.heshanjr.ore_crops.block.ModBlocks;
 import name.heshanjr.ore_crops.item.ModItemGroups;
 import name.heshanjr.ore_crops.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -23,6 +24,7 @@ public class OreCrops implements ModInitializer {
 
 		ModItems.registerItems();
 		ModItemGroups.registerGroups();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
