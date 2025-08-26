@@ -1,45 +1,41 @@
 {
 	"schemaVersion": 1,
-	"id": "ore_crops",
+	"id": "sow_ore",
 	"version": "${version}",
-	"name": "Ore Crops",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Sow Ore",
+	"description": "A mod that allows you to grow ores to get ores in the game.|一个模组，使你可以在游戏里种矿得矿。",
 	"authors": [
 		"HeShanJR|核善的俊瑞"
 	],
 	"contact": {
-		"homepage": "https://github.com/HeShanJR/Ore_Crops/wiki",
-		"sources": "https://github.com/HeShanJR/Ore_Crops",
-		"issues": "https://github.com/HeShanJR/Ore_Crops/issues"
+		"homepage": "https://github.com/HeShanJR/Sow_Ore/wiki",
+		"sources": "https://github.com/HeShanJR/Sow_Ore",
+		"issues": "https://github.com/HeShanJR/Sow_Ore/issues"
 	},
 	"license": "MIT",
-	"icon": "assets/ore_crops/icon.png",
+	"icon": "assets/sow_ore/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.heshanjr.ore_crops.OreCrops"
+			"name.heshanjr.sow_ore.SowOre"
 		],
 		"client": [
-			"name.heshanjr.ore_crops.OreCropsClient"
+			"name.heshanjr.sow_ore.SowOreClient"
 		],
 		"fabric-datagen": [
-			"name.heshanjr.ore_crops.OreCropsDataGenerator"
+			"name.heshanjr.sow_ore.SowOreDataGenerator"
 		]
 	},
 	"mixins": [
-		"ore_crops.mixins.json",
+		"sow_ore.mixins.json",
 		{
-			"config": "ore_crops.client.mixins.json",
+			"config": "sow_ore.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"java": ">=17"
 	}
 }

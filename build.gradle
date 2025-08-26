@@ -23,7 +23,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"ore_crops" {
+		"sow_ore" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
