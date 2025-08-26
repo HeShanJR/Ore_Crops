@@ -12,10 +12,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final RegistryKey<ItemGroup> SOW_ORE_GROUP = register("sow_ore_group");
+    public static final RegistryKey<ItemGroup> SOW_ORE_GROUP = register();
 
-    private static RegistryKey<ItemGroup> register(String id){
-        return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(SowOre.MOD_ID, id));
+    private static RegistryKey<ItemGroup> register(){
+        return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(SowOre.MOD_ID, "sow_ore_group"));
     }
 
     public static void registerGroups(){
